@@ -212,7 +212,7 @@
 
 	<profiles>
 		<profile>
-			<id>release</id>
+			<id>release-on-ossrh</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
