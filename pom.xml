@@ -214,7 +214,7 @@
 		<profile>
 			<id>release-on-ossrh</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 			<build>
 				<plugins>
