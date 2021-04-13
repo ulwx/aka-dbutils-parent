@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>aka-dbutils-parent</artifactId>
   <groupId>com.github.ulwx</groupId>
-  <version>1.0.3.2</version>
+  <version>1.0.3.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 	<name>aka-dbutils-parent</name>
 	<url>https://github.com/ulwx/aka-dbutils-parent</url>
@@ -11,7 +11,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
      <java.source.version>1.8</java.source.version>
      <java.target.version>1.8</java.target.version>
-	  <aka.version>1.0.3.2</aka.version>
+	  <aka.version>1.0.3.3-SNAPSHOT</aka.version>
 	  <aka.dbutils.version>${aka.version}</aka.dbutils.version>
 	  <aka.dbutils.spring.version>${aka.version}</aka.dbutils.spring.version>
 	  <aka.dbutils.spring.boot.starter>${aka.version}</aka.dbutils.spring.boot.starter>
@@ -193,6 +193,16 @@
 			<groupId>com.github.ulwx</groupId>
 			<artifactId>aka-dbutils-spring-boot-starter</artifactId>
 			<version>${aka.dbutils.spring.boot.starter}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.ulwx</groupId>
+			<artifactId>aka-admin-base-spring</artifactId>
+			<version>${aka.dbutils.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>aka-common-tool</artifactId>
+			<groupId>com.github.ulwx</groupId>
+			<version>${aka.dbutils.version}</version>
 		</dependency>
 	</dependencies>
 
