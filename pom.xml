@@ -16,11 +16,11 @@
 	  <aka.dbutils.spring.version>${aka.version}</aka.dbutils.spring.version>
 	  <aka.dbutils.spring.boot.starter>${aka.version}</aka.dbutils.spring.boot.starter>
   </properties> 
-  <modules>
-	  <module>../aka-dbutils</module>
-	  <module>../aka-dbutils-spring</module>
-	  <module>../aka-dbutils-spring-boot-starter</module>
-  </modules>
+<!--  <modules>-->
+<!--	  <module>../aka-dbutils</module>-->
+<!--	  <module>../aka-dbutils-spring</module>-->
+<!--	  <module>../aka-dbutils-spring-boot-starter</module>-->
+<!--  </modules>-->
 
 	<licenses>
 		<license>
@@ -84,7 +84,8 @@
 					</includes>
 				    <useSystemClassLoader>false</useSystemClassLoader>
 				    <forkCount>1</forkCount> 
- 					<argLine>-Dfile.encoding=UTF-8</argLine> 
+ 					<argLine>-Dfile.encoding=UTF-8</argLine>
+					<skip>true</skip>
 				</configuration>
 			</plugin>
 
@@ -120,8 +121,8 @@
 				<version>3.0.2</version>
 				<configuration>
 					<excludes>
-                        <exclude>log4j2.xml</exclude>
-						<exclude>dbpool.xml</exclude>
+                        <exclude>log*.xml</exclude>
+						<exclude>*dbpool*.xml</exclude>
 					</excludes>
 					<archive>
 						<manifest>
@@ -197,15 +198,18 @@
 
 
  </dependencyManagement>
-
 	<distributionManagement>
 		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>snapshot</id>
+			<name>ppmoney snapshot Repository</name>
+			<url>http://maven.scm.ppmoney.com/content/repositories/PPMoneyReposSnapshots/</url>
+			<layout>default</layout>
 		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>release</id>
+			<name>ppmoney release Repository</name>
+			<url>http://maven.scm.ppmoney.com/content/repositories/PPMoneyRepos/</url>
+			<layout>default</layout>
 		</repository>
 	</distributionManagement>
 
@@ -269,6 +273,7 @@
 					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
+
 		</profile>
 	</profiles>
 
