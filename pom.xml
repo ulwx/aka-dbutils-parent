@@ -126,7 +126,6 @@
 				<configuration>
 					<excludes>
                         <exclude>log*.xml</exclude>
-						<exclude>*dbpool*.xml</exclude>
 					</excludes>
 					<archive>
 						<manifest>
