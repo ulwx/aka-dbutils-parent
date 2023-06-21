@@ -193,6 +193,11 @@
                 <version>${aka.dbutils.version}</version>
             </dependency>
             <dependency>
+                <artifactId>aka-common-tool</artifactId>
+                <groupId>com.github.ulwx</groupId>
+                <version>${aka.dbutils.version}</version>
+            </dependency>
+            <dependency>
                 <artifactId>aka-dbutils-spring</artifactId>
                 <groupId>com.github.ulwx</groupId>
                 <version>${aka.dbutils.spring.version}</version>
