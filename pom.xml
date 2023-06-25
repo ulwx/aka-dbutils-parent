@@ -24,6 +24,7 @@
         <spring.version>5.3.26</spring.version>
         <spring.boot.version>2.7.12</spring.boot.version>
         <spring-cloud.version>2021.0.7</spring-cloud.version>
+        <spring-cloud-Alibaba.version>2021.0.5.0</spring-cloud-Alibaba.version>
     </properties>
       <modules>
           <module>../aka-common-tool</module>
@@ -216,6 +217,13 @@
                 <groupId>com.github.ulwx</groupId>
                 <artifactId>aka-dbutils-spring-dynamic-datasource-starter</artifactId>
                 <version>${aka-dbutils-spring-dynamic-datasoruce.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-Alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
 
